@@ -1,0 +1,87 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - personal_chat
+  - github_chat
+  - github_upload
+  - github_account
+  - github_repository
+  - github_new_branch
+  - confirm
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?,"
+  - text: "Hello ,"
+  - text: "It's Good To meet You,"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+  utter_personal:
+  - text: "It is happy to see you again and willing to be with you for a while"
+  utter_github:
+  - text: "I am very delight to help you and redirect to you an amazing app  slice arrow"
+  - text: "It is bult by an enginner Pramodh"
+  utter_link:
+   - text: "https://www.youtube.com/watch?v=X4ciKMX8SYw"
+  utter_github_upload_link:
+    - text: "The below reference will help you upload a project in github ,
+             https://www.youtube.com/watch?v=eGaImwD8fPQ"
+  utter_github_account:
+    - text: "
+      -Go to https://github.com/join.
+      -Type a user name, your email address, and a password.
+      -Choose Sign up for GitHub, and then follow the instructions."
+  utter_github_repository:
+    - text: "
+   -In the upper-right corner of any page, use the  drop-down menu, and select New repository.
+   -Drop-down with option to create a new repository
+   -In the Repository name box, enter hello-world.
+   -In the Description box, write a short description.
+   -Select Add a README file.
+   -Select whether your repository will be Public or Private.
+   -Click Create repository. "
+
+  utter_github_branch:
+    - text: "-Create a branch
+   -Click the Code tab of your hello-world repository.
+   -Click the drop down at the top of the file list that says main.
+   -Branch menu
+   -Type a branch name, readme-edits, into the text box.
+   -Click Create branch: readme-edits from main."
+
+  utter_confirm:
+    - text: "Its been a pleasure in helping you"
+    - text: "It's my duty to guide you in this process"
+    - text: "I would like to help in you future also"
+
+
+oonfig:
+  store_entities_as_slots: true
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+
+

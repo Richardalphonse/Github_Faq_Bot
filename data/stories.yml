@@ -1,0 +1,74 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: personal
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: personal_chat
+    - action: utter_personal
+
+
+
+- story: Github account
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: github_account
+    - action: utter_github_account
+    - intent: confirm
+    - action: utter_confirm
+- story: Github repository
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: github_repository
+    - action: utter_github_repository
+    - intent: confirm
+    - action: utter_happy
+
+- story: Github Branch
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: github_new_branch
+    - action: utter_github_branch
+    - intent: confirm
+    - action: utter_confirm
+
+- story: Github Project upload
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: github_upload
+    - action: utter_github_upload_link
+    - intent: confirm
+    - action: utter_confirm

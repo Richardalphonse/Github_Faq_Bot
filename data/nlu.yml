@@ -1,0 +1,156 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - Hello, my name is [riche](name)
+    - Hi, I am [Pramodh](name)
+    - Yoo,Yoo this  is [pavan](name)
+    - Buddy this is [richard] (name)
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - good morning
+    - good evening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: personal_chat
+  examples: |
+    - Hi, this richard
+    - I am castro 4+3 gang leader
+    - this is sam  alias TMS
+
+- intent: github_chat
+  examples: |
+    - Hi, I have to  deploy an app in github repo
+    - I am getting am error in deploying in Heroku
+    - Hello can you help me in running the app in cloud
+    - I need 
+
+- intent: github_upload
+  examples: |
+    - How to upload a project in github
+    - can have  any reference video for uploading a project in github
+    - I need assistance in uploading a project
+    - I need to upload a project in the github
+    - can you suggest some steps in creating  a github project
+    - Is there any formal way to get into a github project
+  
+
+- intent: github_account
+  examples: |
+    - how to upload a project in github account
+    - can you suggest me any reference video to upload a project in github account
+    - can you help me in uploading a project in github account
+    - I need to create an github account
+    - what are the required steps to create an github account
+    - I have stuck in creating a github account, can you help me
+    - Is there any guided steps in creating a github account
+    - which is the easy way to create github account
+- intent: github_repository
+  examples: |
+    - how to create a new repository in github
+    - what are the steps to create a new repository in creating a github account
+    - I would like to know the steps in creating a new repository
+    - what is the procedure for launching a repository in creating a github account
+    - I would like to know the easiest way to create a github repository
+    - can you guide me in github repository
+    - Is there any ,proper way in creating a repo for github
+    -
+- intent: github_new_branch
+  examples: |
+    - what are the steps to create a new branch in github
+    - can you guide me in creating a  branch in github 
+    - I would like to know the steps in creating a github branch
+    - I need some assistance in making a new branch under the main branch
+    - for building a new branch under the main
+- intent: confirm
+  examples: |
+    - yes I got it thanks for your help
+    - your guidance has helped me a lot
+    - I been great connected with you
+    - it been a pleasure in conversing with you
+    = Thanks a lot for you guidance
+  
+
+
